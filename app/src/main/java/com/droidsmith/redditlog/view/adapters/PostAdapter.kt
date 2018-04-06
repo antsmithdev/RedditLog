@@ -37,10 +37,10 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.ViewHolder> (){
 
 
         init {
-            comments_btn.setOnClickListener{v -> openComments()}
-            saveToLog_btn.setOnClickListener{v -> saveToLog()}
-            downvote_btn.setOnClickListener{v -> decreaseVote()}
-            upvote_btn.setOnClickListener{v -> increaseVote()}
+            comments_btn.setOnClickListener{_ -> openComments()}
+            saveToLog_btn.setOnClickListener{_ -> saveToLog()}
+            downvote_btn.setOnClickListener{_ -> decreaseVote()}
+            upvote_btn.setOnClickListener{_ -> increaseVote()}
         }
 
         private fun increaseVote() {
@@ -60,5 +60,5 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.ViewHolder> (){
         }
 
     }
-    
+
 }
